@@ -9,7 +9,7 @@ export const  OrdersList = async (dispatch) => {
         })
         dispatch({type:'ORDERS_LIST',payload:data.data})
     }catch(err){
-        console.log(err.massage)
+        console.log(err)
     }
 };
 
@@ -21,7 +21,7 @@ export const  OrdersSummary = async (dispatch) => {
         });
         dispatch({type:'ORDERS_SUMMARY',payload:data.data})
     }catch(err){
-        console.log(err.massage)
+        console.log(err)
     }
 };
 
@@ -33,6 +33,6 @@ export const  OrdersLast7Days = async (dispatch) => {
         })
         dispatch({type:'ORDERS_LAST_7_DAYS',payload:data.data})
     }catch(err){
-        console.log(err.massage)
+        console.log(err)
     }
 };
