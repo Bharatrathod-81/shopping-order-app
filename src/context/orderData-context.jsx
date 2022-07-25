@@ -23,7 +23,7 @@ export const OrderDataContextProvider = ({ children }) => {
 
     const [data, dispatchData] = useReducer(updateHandler,{
         ordersList:[],
-        ordersSummary:{},
+        ordersSummary:{overview:undefined},
         ordersLast7Days:{}
     })
     return(
