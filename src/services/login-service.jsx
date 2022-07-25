@@ -11,7 +11,7 @@ export const  Login = async (dispatch,{ username, password }) => {
         localStorage.setItem("token",data.token)
         dispatch({type:'LOGIN',payload:data.token})
     }catch(err){
-        console.log(err.massage)
+        console.log(err)
         dispatch({type:"ERROR"})
     }
 };
