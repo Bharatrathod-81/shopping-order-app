@@ -100,7 +100,7 @@ export const LoginPage = () => {
 
 
                         <div className="d-flex justify-content-center align-items-center flex-column mb-3" style={{ width: "100%" }}>
-                            <Link to="/">Forgot Password ?</Link>
+                            <Link to="/forget-password">Forgot Password ?</Link>
                             <p className="m-3">Don't have an account? <Link to="#">Sign_Up</Link></p>
                         </div>
                     </div>
