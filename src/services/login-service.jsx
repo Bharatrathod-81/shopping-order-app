@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const  Login = async (dispatch,{ username, password }) => {
     try{
-        const { data } = await axios.post("https://13.76.214.165:8001/api/login",
+        const { data } = await axios.post("http://13.76.214.165:8001/api/login",
         {
             username,
             password
